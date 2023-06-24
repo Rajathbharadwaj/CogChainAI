@@ -1,0 +1,35 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Staker",
+  "sourceName": "contracts/Staker.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "exampleExternalContractAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "exampleExternalContract",
+      "outputs": [
+        {
+          "internalType": "contract ExampleExternalContract",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161012138038061012183398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610082565b600060208284031215610065578081fd5b81516001600160a01b038116811461007b578182fd5b9392505050565b6091806100906000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80639f75f22714602d575b600080fd5b600054603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220f9be27cca160a7bedd3ef3457c6ab61b1cd9ad165190c13834262629618db14164736f6c63430008040033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80639f75f22714602d575b600080fd5b600054603f906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f3fea2646970667358221220f9be27cca160a7bedd3ef3457c6ab61b1cd9ad165190c13834262629618db14164736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
