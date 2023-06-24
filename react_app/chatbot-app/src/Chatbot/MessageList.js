@@ -12,7 +12,7 @@ const MessageList = ({ messages }) => {
 
         return (
           <div key={index}>
-            <strong>{role === 'system' ? 'System' : 'You'}:</strong> {message}
+            <strong>{role === 'system' ? 'System' : 'You'}:</strong> {message.text}
           </div>
         );
       })}
