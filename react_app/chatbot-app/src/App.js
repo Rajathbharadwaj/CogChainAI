@@ -1,13 +1,12 @@
 import React from 'react';
 import Chatbot from './Chatbot';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      <h1>Chatbot App</h1>
+    <div>
       <Chatbot />
     </div>
   );
-};
+}
 
 export default App;
