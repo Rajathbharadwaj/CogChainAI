@@ -4,11 +4,11 @@ const Message = ({ message }) => (
   <div>
     {message.role === 'system' ? (
       <p>
-        <strong>System:</strong> {message.text}
+        <strong>System:</strong> {message.content}
       </p>
     ) : (
       <p>
-        <strong>You:</strong> {message.text}
+        <strong>You:</strong> {message.content}
       </p>
     )}
   </div>
