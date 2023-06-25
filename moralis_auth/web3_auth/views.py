@@ -17,10 +17,13 @@ if API_KEY == 'WEB3_API_KEY_HERE':
 
 
 def moralis_auth(request):
-    return render(request, 'login.html', {})
+    return render(request, 'frontend.html', {})
 
 def my_profile(request):
     return render(request, 'profile.html', {})
+
+def chainlitUI(request):
+    return redirect()
 
 def request_message(request):
     data = json.loads(request.body)

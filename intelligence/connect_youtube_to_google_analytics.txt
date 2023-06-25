@@ -1,0 +1,15 @@
+Steps to Connect YouTube Channel to Google Analytics:
+
+1. Sign in to your Google Analytics account.
+2. Click on the Admin tab.
+3. Select the account that contains your YouTube channel.
+4. Click on the Property column and select the property that corresponds to your YouTube channel.
+5. Click on the Property Settings tab.
+6. Scroll down to the bottom of the page and click on the 'Get Tracking ID' button.
+7. Copy the tracking ID.
+8. Sign in to your YouTube account.
+9. Click on your profile picture and select 'YouTube Studio'.
+10. Click on the Settings icon.
+11. Click on 'Channel' and then 'Advanced settings'.
+12. Scroll down to the 'Google Analytics property tracking ID' section and paste the tracking ID.
+13. Click on 'Save'.

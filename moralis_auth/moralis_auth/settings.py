@@ -39,12 +39,12 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "web3_auth",
         # external
-    'rest_framework',
-    'rest_framework.authtoken',
-    'corsheaders',
-    'allauth',
-    'allauth.account',
-    "reactpy_django",
+    # 'rest_framework',
+    # 'rest_framework.authtoken',
+    # 'corsheaders',
+    # 'allauth',
+    # 'allauth.account',
+    # "reactpy_django",
 
 ]
 
