@@ -2,7 +2,7 @@ import json
 import requests
 
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from datetime import datetime, timedelta, timezone
@@ -17,7 +17,7 @@ if API_KEY == 'WEB3_API_KEY_HERE':
 
 
 def moralis_auth(request):
-    return render(request, 'frontend.html', {})
+    return render(request, 'login.html', {})
 
 def my_profile(request):
     return render(request, 'profile.html', {})
@@ -28,6 +28,7 @@ def chainlitUI(request):
 def request_message(request):
     data = json.loads(request.body)
     print(data)
+
 
     #setting request expiration time to 1 minute after the present->
     present = datetime.now(timezone.utc)
@@ -71,6 +72,7 @@ def verify_message(request):
         print("eth address", eth_address)
         try:
             user = User.objects.get(username=eth_address)
+            HttpResponseRedirect('http://localhost:8000')
         except User.DoesNotExist:
             user = User(username=eth_address)
             user.is_staff = False
@@ -81,6 +83,7 @@ def verify_message(request):
                 login(request, user)
                 request.session['auth_info'] = data
                 request.session['verified_data'] = json.loads(x.text)
+                HttpResponseRedirect('http://localhost:8000')
                 return JsonResponse({'user': user.username})
             else:
                 return JsonResponse({'error': 'account disabled'})

@@ -5,9 +5,6 @@ import os
 import chainlit as cl
 
 
-OPENAI_API_KEY=os.environ["OPENAI_API_KEY"] 
-SERPAPI_API_KEY=os.environ["SERPAPI_API_KEY"]
-
 # The search tool has no async implementation, we fall back to sync
 @cl.langchain_factory(use_async=False)
 def load():
