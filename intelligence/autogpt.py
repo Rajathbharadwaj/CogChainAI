@@ -14,8 +14,8 @@ from langchain.chat_models import ChatOpenAI
 import chainlit as cl
 
 
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["SERPAPI_API_KEY"] = "70035b12a2500be93964ae7a61a2bfe4a1d98b09f651963376b6c7ae84a9db9d"
+OPENAI_API_KEY=os.environ["OPENAI_API_KEY"] 
+SERPAPI_API_KEY=os.environ["SERPAPI_API_KEY"]
 
 # Tools the langchain agent will have access to
 search = SerpAPIWrapper()
